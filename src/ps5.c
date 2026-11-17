@@ -1,6 +1,9 @@
 #include "ps5.h"
 
 #include <esp_system.h>
+#if __has_include(<esp_mac.h>)
+#include <esp_mac.h>
+#endif
 #include <string.h>
 
 #include "ps5_int.h"
